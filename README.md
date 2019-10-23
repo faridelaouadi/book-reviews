@@ -6,7 +6,7 @@ Background and Motivation
 
 Current Progress
 ----------------
-![](painting.gif)
+![](demo.gif)
 Full video here: https://youtu.be/NpC8r8lJ-K8
 
 How can i run this? 
@@ -27,6 +27,18 @@ export DATABASE_URL=""--link to the database here--""
 
 export FLASK_APP=application.py
 flask run 
+
+7) to make use of the api, simply make a GET request to the url /api/{{insert isbn here}}
+```
+{
+    "title": "Memory",
+    "author": "Doug Lloyd",
+    "year": 2015,
+    "isbn": "1632168146",
+    "review_count": 28,
+    "average_score": 5.0
+}
+```
 
 Things to do
 ------------
