@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book
+{% endblock %}
+
+{% block body %}
+
+{% for book in books %}
+  {% if loop.first %}<div class="container"><div class="row">{% endif %}
+  <div class="col-sm"><div class="card" style="width: 18rem; margin:10px;">
+    <img class="card-img-top" src="http://covers.openlibrary.org/b/isbn/{{book.isbn}}.jpg" alt="Book Cover image">
+    <div class="card-body">
+      <h5 class="card-title"><strong>{{book.title}}</strong> by {{book.author}}</h5>
+      <a href="{{ url_for('singleBook', isbn=book.isbn) }}" class="btn btn-primary" style="text-align:center;">Find out more</a>
+    </div>
+  </div></div>
+  {% if loop.index%3 == 0 %}</div><div class="row">{% endif %}
+  {% if loop.last %}</div>{% endif %}
+{% endfor %}
+
+
+  <!--{% for book in books %}
+
+  {% endfor %}-->
+
+{% endblock %}
+
+{% block right_button %}
+    <a class="underlineHover" href="{{ url_for('search') }}">Search Again</a>
+{% endblock %}
+
+{% block left_button %}
+    <a class="underlineHover" href="{{ url_for('log_out') }}">Log out!</a>
+{% endblock %}

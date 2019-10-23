@@ -1,2 +1,3 @@
-# book-reviews
-A web app made using bootstrap and Flask 
+# Project 1
+
+Web Programming with Python and JavaScript

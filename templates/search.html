@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search for a book
+{% endblock %}
+
+{% block body %}
+
+<div class="wrapper fadeInDown">
+
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h3> Welcome {{username}} </h3>
+    </div>
+
+    <!-- Login Form -->
+    <form action="{{ url_for('bookPage') }}" method="post">
+      <input type="text" class="fadeIn second" name="book" placeholder="ISBN/Author name etc" autocomplete="off">
+      <input type="submit" class="fadeIn fourth" value="Search">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Click for examples
+      </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <ul>
+            <li>ISBN: 1451648537 , Title: Steve Jobs </li>
+            <li>ISBN: 0765317508 , Title: Aztec </li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block right_button %}
+    <a class="underlineHover" href="{{ url_for('log_out') }}">Log Out</a>
+{% endblock %}

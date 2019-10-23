@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create an account
+{% endblock %}
+
+{% block body %}
+
+<div class="wrapper fadeInDown">
+
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h3> Fill out details below </h3>
+    </div>
+
+    <!-- Login Form -->
+    <form action="{{ url_for('registerUser') }}" method="post">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username" autocomplete="off">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" autocomplete="off">
+      <input type="password" id="password" class="fadeIn third" name="confirm_password" placeholder="Confirm Password" autocomplete="off">
+      <input type="submit" class="fadeIn fourth" value="Sign Up!">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="{{ url_for('login') }}">Already have an account?</a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block right_button %}
+    <a class="underlineHover" href="{{ url_for('login') }}">Log in</a>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    404 Error
+{% endblock %}
+
+{% block body %}
+
+<div class="alert alert-primary" role="alert" style="max-width: 540px; margin: auto; width: 50%;margin-top:20px; border: 4px solid #56baed; border-radius: 5px;">
+  <h4 class="alert-heading"><u>404 Error</u></h4>
+  <p>{{message}}</p>
+  <hr>
+</div>
+
+
+
+
+
+{% endblock %}
+
+{% block left_button %}
+    <a class="underlineHover" href="{{ url_for('login') }}">Search for books</a>
+{% endblock %}

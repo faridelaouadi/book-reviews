@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    
+
+    <!--Font stylesheet here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JQuery here-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap here css and js-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <script>
+    function outputUpdate(vol) {
+  var output = document.querySelector("#volume");
+	output.value = vol;
+  output.style.left = vol + 'px';
+}
+</script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light" style="background-color: #56baed;">
+        {% if self.left_button() %}
+        <button type="button" class="btn btn-light">{% block left_button %}{% endblock %}</button>
+        {% else %}
+        <a class="navbar-brand" href="#">Book Reviews</a>
+        {% endif %}
+        <form class="form-inline">
+          {% if self.right_button() %}
+          <button type="button" class="btn btn-light">{% block right_button %}{% endblock %}</button>
+          {% endif %}
+        </form>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+
+  </body>
+</html>

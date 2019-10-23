@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log in!
+{% endblock %}
+
+{% block body %}
+
+<div class="wrapper fadeInDown">
+
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h3> Login </h3>
+    </div>
+
+    <!-- Login Form -->
+    <form action="{{ url_for('search') }}" method="post">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username" autocomplete="off">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" autocomplete="off">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="{{ url_for('register') }}">Don't have an account?</a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block right_button %}
+    <a class="underlineHover" href="{{ url_for('register') }}">Sign up!</a>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Notice
+{% endblock %}
+
+{% block body %}
+
+<div class="alert alert-primary" role="alert" style="max-width: 540px; margin: auto; width: 50%;margin-top:20px; border: 4px solid #56baed; border-radius: 5px;">
+  <h4 class="alert-heading"><u>Notice</u></h4>
+  <p>{{message}}</p>
+  <hr>
+</div>
+
+{% endblock %}
+
+{% block left_button %}
+    <a class="underlineHover" href="{{ url_for('register') }}">Sign Up!</a>
+{% endblock %}
