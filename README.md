@@ -12,7 +12,7 @@ Full video here: https://youtu.be/NpC8r8lJ-K8
 How can i run this? 
 -----
 
-1) Set up the PostgreSQL database on a server like heroku. 
+1) Set up the PostgreSQL database on a platform like heroku. 
 2) Use a service like adminer to make the following tables
   a) USERS( username (pk) , password )
   b) BOOKS( isbn(pk), title, author, year )
