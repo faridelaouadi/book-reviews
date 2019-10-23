@@ -2,3 +2,9 @@ Flask
 Flask-Session
 psycopg2-binary
 SQLAlchemy
+render_template
+request
+redirect
+url_for
+jsonify
+requests
