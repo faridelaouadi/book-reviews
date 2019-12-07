@@ -6,10 +6,10 @@ Background and Motivation
 
 Current Progress and Features
 ----------------
-![](demo.gif)
+![Alt Text](https://media.giphy.com/media/QArj6Hrph58YUb60Aq/giphy.gif)
 - Full video here: https://youtu.be/NpC8r8lJ-K8
 
-- The database contains a selection of books. Users can search for a book from the database by ISBN, title or author. For non unique queries, the user is then shown a list of all matching results. From these results, the user can then view information regarding the book which is retrieved through the GoodReads API. The user can then see all the reviews left by fellow users on the system as well as leaving their own reviews. 
+- The database contains a selection of books. Users can search for a book from the database by ISBN, title or author. For non unique queries, the user is then shown a list of all matching results. From these results, the user can then view information regarding the book which is retrieved through the GoodReads API. The user can then see all the reviews left by fellow users on the system as well as leaving their own reviews.
 
 How can i run this?
 -----
