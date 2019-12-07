@@ -1,7 +1,7 @@
 Background and Motivation
 ------
 
-- This web app is made using bootstrap (frontend), Python Flask (backend), PostgreSQL. I have had experience developing static frontend websites and decided to begin learning dynamic content generation and basically how to create full stack apps. I also created a rest API with this app so users can make GET requests using ISBN numbers and retrieve information like title, publish date and more. 
+- This technologies used are : Python's Flask, Bootstrap and PostgreSQL for the database. I have had experience developing static frontend websites and decided to begin learning dynamic content generation and basically how to create full stack apps. I also created a rest API with this app so users can make GET requests using ISBN numbers and retrieve information like title, publish date and more. 
 
 
 Current Progress
