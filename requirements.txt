@@ -99,7 +99,7 @@ tensorflow-tensorboard==0.4.0rc3
 termcolor==1.1.0
 tf-estimator-nightly==1.14.0.dev2019080601
 toolz==0.9.0
-urllib3==1.23
+urllib3==1.24.2
 Werkzeug==0.15.4
 wrapt==1.11.2
 xgboost==0.90
