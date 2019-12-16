@@ -93,7 +93,7 @@ SQLAlchemy==1.3.10
 submit50==3.0.2
 tb-nightly==1.15.0a20190806
 tensorboard==1.14.0
-tensorflow==1.14.0
+tensorflow==1.15.0
 tensorflow-estimator==1.14.0
 tensorflow-tensorboard==0.4.0rc3
 termcolor==1.1.0
