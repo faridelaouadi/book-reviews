@@ -78,7 +78,7 @@ pytz==2018.5
 PyWavelets==1.0.2
 PyYAML==3.12
 Quandl==3.4.8
-requests==2.19.1
+requests==2.20.0
 scikit-image==0.14.2
 scikit-learn==0.20.3
 scipy==1.0.0
