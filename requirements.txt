@@ -42,7 +42,7 @@ Kivy==1.11.1
 Kivy-Garden==0.1.4
 kiwisolver==1.0.1
 lib50==2.0.0
-lxml==4.4.1
+lxml==4.6.2
 Markdown==2.6.9
 MarkupSafe==1.0
 matplotlib==3.0.2
