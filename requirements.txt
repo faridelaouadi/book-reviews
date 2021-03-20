@@ -34,7 +34,7 @@ imagesize==1.1.0
 inflection==0.3.1
 itsdangerous==1.1.0
 jellyfish==0.7.2
-Jinja2==2.10.1
+Jinja2==2.11.3
 Keras==2.1.2
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
