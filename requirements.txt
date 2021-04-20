@@ -64,7 +64,7 @@ pluggy==0.6.0
 protobuf==3.9.1
 psycopg2-binary==2.8.3
 ptyprocess==0.6.0
-py==1.5.2
+py==1.10.0
 pyasn1==0.4.7
 PyAudio==0.2.11
 pycparser==2.19
