@@ -52,7 +52,7 @@ ndg-httpsclient==0.5.1
 networkx==2.2
 nltk==3.4
 numpy==1.17.1
-opencv-python==3.4.4.19
+opencv-python==4.2.0.32
 opt-einsum==3.0.1
 packaging==18.0
 pandas==0.25.1
